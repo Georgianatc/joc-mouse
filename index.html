@@ -1,0 +1,32 @@
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- pentru css-->
+
+<style>
+	body{
+		margin: 0;
+		background: #FEF5E7;
+	}
+
+</style>
+
+<div class="fixed text-gray-500 text-2xl ml-10 mt-4 font-bold"><span>Scor: </span><span id='valoareScor'>0</span></div> <!-- Afisare scor -->
+
+<div class="fixed inset-0 flex items-center justify-center" id="fereastraStart"> <!-- Fereastra start -->
+	<div class="bg-blue-200 rounded-lg max-w-md w-full p-6 text-center">
+		<p class= "text-gray-600">Scor curent:</p>
+		<h1 class="text-4xl font-bold leading-none" id="scorFinal">0</h1>
+		<p class= "text-gray-600 mb-4">puncte</p>
+		<div class="p-6">
+			<button class="bg-blue-600 text-xl text-white w-full py-3 rounded-full" id="butonStart">Start Joc</button>
+		</div>
+		<p class= "text-gray-600">Cel mai mare scor:</p>
+		<h1 class="text-4xl font-bold leading-none text-red-700" id="scorMare"></h1>
+		<p class= "text-gray-600 mb-4">puncte</p>
+	</div>
+
+</div>
+
+<canvas></canvas>
+
+
+
+<script src="./index.js"></script>
