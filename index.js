@@ -71,8 +71,7 @@ let proiectile = []
 let inamici = []
 let scor = 0
 let key = 'scor-mare'
-scorMare.innerHTML = localStorage.getItem(key)
-//localStorage.setItem(key, 0)
+scorMare.innerHTML = sessionStorage.getItem(key)
 
 //functie care va reseta valorile la fiecare reinceput de joc
 function init(){
@@ -143,11 +142,11 @@ function animate(){
 
 			//salvare scor maxim
 
-			if(scor>parseInt(localStorage.getItem(key))){
+			if(scor>parseInt(sessionStorage.getItem(key))){
 					scorMare.innerHTML = scor
-					localStorage.setItem(key,scor)
+					sessionStorage.setItem(key,scor)
 			}else {
-				scorMare.innerHTML = localStorage.getItem(key)
+				scorMare.innerHTML = sessionStorage.getItem(key)
 			}
 
 			fereastraStart.style.display = 'flex'
